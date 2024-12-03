@@ -1,0 +1,58 @@
+.leftCon{
+    position: fixed;
+    left: 0;
+    top: 50vh;
+    z-index: 10;
+    margin-left: 150px;
+    background-color: transparent;
+
+   
+
+}
+
+.leftButton {
+    background-color: transparent;
+
+    border: none;
+}
+
+.leftButton:hover {
+background-color: transparent;
+cursor: pointer;
+}
+
+
+.rightCon{
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    z-index: 10;
+    margin-right: 150px;
+    background-color: transparent;
+
+   
+
+}
+
+.rightButton {
+    background-color: transparent;
+
+    border: none;
+}
+
+.rightButton:hover {
+background-color: transparent;
+cursor: pointer;
+}
+
+svg {
+    height: 80px;
+    width: 80px;
+    fill: white;
+}
+
+svg:hover {
+    height: 80px;
+    width: 80px;
+    fill: rgba(255, 255, 255, 0.349);
+}

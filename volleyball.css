@@ -1,47 +1,83 @@
 body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0, 195, 255, 0.644);
-    background-image: url(balleyball.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .balleyballCon{
-    width: 700px;
-    height: 700px;
-    text-align: center;
-    border-radius: 20px;
-    text-align: left;
-     margin-right: 0px;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     display: flex;
-     flex-direction: column;
-     /* background-color: aqua; */
-     margin-left: 160px;
-     color: white;
-     align-items: center;
-  }
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 195, 255, 0.644);
+  background-image: url(balleyball.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.balleyballCon{
+  width: 700px;
+  height: 700px;
+  text-align: center;
+  border-radius: 20px;
+  text-align: left;
+   margin-right: 0px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display: flex;
+   flex-direction: column;
+   /* background-color: aqua; */
+   margin-left: 160px;
+   color: white;
+   align-items: center;
+}
 
-  .head1{
-    font-size: 100px;
-    margin-bottom: 0%;
-  }
-  .heding{
-    font-size: 40px;
-  }
+.head1{
+  font-size: 100px;
+  margin-bottom: 0%;
+}
+.heding{
+  font-size: 40px;
+}
 
 
-  .tatay {
-    width: 100%;
-    height: 87vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    
-  }
+.tatay {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
   
-  
+}
+
+
+.secondScroll{
+width: 100%;
+height: 100vh;
+background-image: url(valleyball\ background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+flex-direction: column;
+
+}
+
+
+.text{
+height: 500px;
+width: 900px;
+display: flex;
+align-items: center;
+flex-direction: column;
+font-size: 45px;
+margin-right: 200px;
+text-align: justify;
+margin-bottom: 30px;
+}
+
+.h3{
+margin-bottom: 10px;
+}
+
+.p{
+margin-top: 5px;
+}
+.volleyball{
+color: #fff;
+}

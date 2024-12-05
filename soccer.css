@@ -1,44 +1,144 @@
 body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0, 195, 255, 0.644);
-    background-image: url(soccer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .basketballCon{
-    width: 700px;
-    height: 700px;
-    text-align: center;
-    border-radius: 20px;
-    text-align: left;
-     margin-right: 0px;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     display: flex;
-     flex-direction: column;
-     /* background-color: aqua; */
-     margin-right: 80px;
-     
-     align-items: center;
-  }
+  margin: 0;
+  padding: 0;
 
-  .head1{
-    font-size: 100px;
-    margin-bottom: 0%;
-  }
-  .heding{
-    font-size: 40px;
-  }
+}
+.basketballCon{
+  width: 700px;
+  height: 700px;
+  text-align: center;
+  border-radius: 20px;
+  text-align: left;
+   margin-right: 0px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display: flex;
+   flex-direction: column;
+   /* background-color: aqua; */
+   margin-right: 80px;
+   
+   align-items: center;
+}
+
+.head1{
+  font-size: 100px;
+  margin-bottom: 0%;
+}
+.heding{
+  font-size: 40px;
+}
 
 
-  .tatay {
-    width: 100%;
-    height: 87vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 
-    
-  }
+
+.firstScroll{
+  width: 100%;
+  height: 100vh;
+  background-image: url(soccer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+
+
+}
+
+
+.firstTexts{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 500px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 45px;
+  margin-right: 200px;
+  text-align: justify;
+  margin-bottom: 30px;
+  margin-left: 200px;
+}
+
+.h3{
+  margin-bottom: 10px;
+}
+
+.p{
+  margin-top: 5px;
+}
+
+
+
+
+
+.secondScroll {
+width: 100%;
+height: 100vh;
+background-image: url("shoot.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+flex-direction: column;
+padding-bottom: 100px;
+}
+
+.tita {
+margin-top: 0px;
+width: 100%;
+height: 60vh;
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+}
+
+.titaCon {
+background-color: rgba(20, 16, 16, 0.897);
+height: 350px;
+border-radius: 20px;
+display: flex;
+font-size: 35px;
+width: 100%;
+align-items: center         ;
+justify-content: center;
+padding: 5px;
+color: white;
+text-align: center;
+}
+
+.titaH1 {
+border-radius: 10px;
+color: white;
+font-size: 50px;
+background-color: transparent;
+backdrop-filter: blur(5px);
+margin-bottom: 80px;
+}
+
+.grid-container {
+width: 90vw;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap:25px;
+
+}
+.anak{
+height: 100%;
+display: flex;
+align-items: flex-start;
+}
+
+
+.titaCon:hover{
+background-color: rgba(255, 255, 0, 0.397);
+}
+.soccer{
+color: #fff;
+}

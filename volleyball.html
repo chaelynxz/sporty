@@ -17,14 +17,12 @@
       <a href="volleyball.html"
         ><button class="volleyball">Volleyball</button></a
       >
-      <button href="" class="soccer">Soccer</button>
       <button href="" class="badminton">Badminton</button>
-      <button href="" class="billiards">billiards</button>
     </nav>
 
     <div class="tatay">
       <div class="leftCon">
-        <a href="basketball.html"
+        <a href="basketball/index.html"
           ><button class="leftButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +46,7 @@
       </div>
 
       <div class="rightCon">
-        <a href="soccer.html"
+        <a href="badminton.html"
           ><button class="rightButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,41 +62,128 @@
     </div>
 
     <div class="secondScroll">
-      <div class="main-container">
-        <section class="introduction">
-          <h1 class="title">How to Play Volleyball</h1>
-          <p class="intro-text">
-            Teams are divided into two sides, with a net in the middle. Points
-            are scored when the opposing team fails to return the ball or when
-            the ball lands in their court. Players rotate positions after
-            winning the serve from the opposing team. Teams have three hits to
-            return the ball over the net, typically using a bump, set, and
-            spike.
-          </p>
-        </section>
-        <section class="fundamentals">
-          <h2 class="subtitle">Fundamentals of Volleyball</h2>
-          <ul class="fundamentals-list">
-            <li>
-              <strong>Passing:</strong> Using forearms to pass the ball to a
-              teammate.
-            </li>
-            <li>
-              <strong>Setting:</strong> Using fingers to set the ball up for a
-              spike.
-            </li>
-            <li>
-              <strong>Spiking:</strong> Hitting the ball forcefully over the
-              net.
-            </li>
-            <li>
-              <strong>Blocking:</strong> Preventing the ball from crossing the
-              net.
-            </li>
-          </ul>
-        </section>
+      <div class="textCon">
+        <h3 class="h3">HOW TO PLAY VOLLEYBALL:</h3>
+        <p class="p">
+          Teams are divided into two sides, with a net in the middle. Points are
+          scored when the opposing team fails to return the ball or when the
+          ball lands in their court. Players rotate positions after winning the
+          serve from the opposing team. Teams have three hits to return the ball
+          over the net, typically using a bump, set, and spike.
+        </p>
+      </div>
+
+      <h3 class="h3">FUNDAMENTALS</h3>
+      <div class="fundaCon">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <p>Passing</p>
+            </div>
+            <div class="card-back">
+              <p>Using forearms to pass the ball to a teammate.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <p>Setting</p>
+            </div>
+            <div class="card-back">
+              <p>Using fingers to set the ball up for a spike.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <p>Spiking</p>
+            </div>
+            <div class="card-back">
+              <p>Hitting the ball forcefully over the net.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <p>Blocking</p>
+            </div>
+            <div class="card-back">
+              <p>Preventing the ball from crossing the net.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="thirdScroll"></div>
+
+    <div class="thirdScroll">
+      <div class="positionHead">POSITION</div>
+      <div class="buttonCon">
+        <div class="scene">
+          <div class="cube" id="cube-oh">
+            <span class="side top">Outside Hitter</span>
+            <span class="side front">OH</span>
+          </div>
+        </div>
+
+        <div class="scene">
+          <div class="cube" id="cube-md">
+            <span class="side top">Middle Blocker</span>
+            <span class="side front">MB</span>
+          </div>
+        </div>
+
+        <div class="scene">
+          <div class="cube" id="cube-opp">
+            <span class="side top">Opposite Hitter</span>
+            <span class="side front">OPP</span>
+          </div>
+        </div>
+
+        <div class="scene">
+          <div class="cube" id="cube-s">
+            <span class="side top">Setter</span>
+            <span class="side front">S</span>
+          </div>
+        </div>
+
+        <div class="scene">
+          <div class="cube" id="cube-l">
+            <span class="side top">Libero</span>
+            <span class="side front">L</span>
+          </div>
+        </div>
+
+        <div class="scene">
+          <div class="cube" id="cube-ds">
+            <span class="side top">Defensive Specialist</span>
+            <span class="side front">DS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="court" id="court">
+        <div class="circle" id="circleOH">OH</div>
+
+        <div class="circle" id="circleMD">MD</div>
+
+        <div class="circle" id="circleOPP">OPP</div>
+
+        <div class="circle" id="circleS">S</div>
+
+        <div class="circle" id="circleL">L</div>
+
+        <div class="circle" id="circleDS">DS</div>
+      </div>
+
+      <div id="defCon"></div>
+    </div>
+
+    <script src="volleyball.js"></script>
   </body>
 </html>

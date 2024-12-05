@@ -11,7 +11,8 @@
   gap: 30px;
 }
 
-.title, .basketball, .volleyball, .soccer, .badminton, .billiards  {
+.title, .basketball, .volleyball,
+  .badminton  {
   font-size: 40px;
   color: yellow;
   background-color: transparent;
@@ -32,35 +33,14 @@ display: flex;
 
 
 
-.billiards{
-    margin-right: 50px;
+.basketball{
+    margin-left: 300px;
 }
-
-/* .basketball:hover {
-    color: white;
-  background-color: gray;
-}
-.volleyball:hover {
-    color: white;
-  background-color: gray;
-}
-.tableTennis:hover {
-    color: white;
-  background-color: gray;
-}
-.soccer:hover {
-    color: white;
-  background-color: gray;
-}
-.billiards:hover{
-  background-color: gray;
-    color: white;
-} */
 
 
 .nanay {
   width: 100%;
-  height: 87vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -62,7 +62,8 @@ body {
   text-align: center;
 }
 .titaH1 {
-  margin-top: 150px;
+  margin-bottom: 0;
+  margin-top: 120px;
   font-size: 50px;
   color: #ffd700; /* Warm yellow */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -89,16 +90,20 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+ 
 }
 .titaCon legend {
   font-size: 40px;
   color: #ffd700;
 }
-.titaCon p {
+.titaCon {
+  color: #fff;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 1px;
 }
+
 .titaCon:hover {
+  color: black;
   background-color: #ffd700;
   transform: scale(1.05);
 }

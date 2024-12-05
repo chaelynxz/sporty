@@ -19,9 +19,9 @@ body {
   display: flex;
   flex-direction: column;
   /* background-color: aqua; */
-  margin-left: 160px;
+  margin-left: 250px;
   color: white;
-  align-items: center;
+  text-align: justify;
 }
 
 .head1 {
@@ -39,127 +39,276 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+
 .secondScroll {
   width: 100%;
-  height: 100vh;
-  font-family: "Arial", sans-serif;
-  background: linear-gradient(
-    135deg,
-    #ffd700 0%,
-    #ffb400 100%
-  ); /* Gradient background */
-  color: #333;
-  margin: 0;
-  padding: 0;
+  height: 110vh;
+  background-image: url(second.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  animation: backgroundAnimation 10s infinite alternate;
+  flex-direction: column;
 }
 
-@keyframes backgroundAnimation {
-  0% {
-    background: linear-gradient(135deg, #ffd700 0%, #ffb400 100%);
-  }
-  100% {
-    background: linear-gradient(135deg, #ffb400 0%, #ffd700 100%);
-  }
-}
-
-.main-container {
-  max-width: 800px;
-  width: 90%;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+.textCon {
+  background: linear-gradient(
+    135deg,
+    #ffd9004f,
+    #ffa60057
+  ); /* Gradient background */
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 2s ease-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.title,
-.subtitle {
+  padding: 20px;
+  margin: 20px auto;
+  margin-top: 200px;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: #ffffff; /* White color for contrast */
-  margin: 10px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(10px);
 }
-
-.introduction {
-  margin-bottom: 20px;
+.textCon:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-.intro-text {
-  font-size: 18px;
+.h3 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: #ffffff; /* White text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.p {
+  font-size: 25px;
   line-height: 1.6;
-  margin-bottom: 20px;
-  color: #000; /* Black text for readability */
-}
-
-.fundamentals-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.fundamentals-list li {
-  font-size: 18px;
-  margin: 10px 0;
-  background-color: #ff4500; /* Volleyball orange */
+  color: #ffffff; /* White text */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   padding: 10px;
   border-radius: 10px;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: listItemFadeIn 0.5s ease-out forwards;
-  opacity: 0;
-  animation-delay: calc(0.1s * var(--animation-order));
 }
 
-.fundamentals-list li strong {
+.fundaCon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #ffd9004f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  /* border: 10px solid #ffd9004f; */
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 40px;
+  transform: rotateY(0deg);
+  backdrop-filter: blur(10px);
+}
+
+.card-back {
+  background-color: #ffd900c5;
+  color: #000;
+  display: flex;
+  align-items: center;
+  /*   border: 10px solid #FFD700; */
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 30px;
+  transform: rotateY(180deg);
+  backdrop-filter: blur(10px);
+}
+
+.thirdScroll {
+  width: 100%;
+  height: 100vh;
+  background-color: #222229;
+  /* background-color: rgb(172, 117, 15); */
+  /* background-image: url(courrtys.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.positionHead {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 200px;
+  font-size: 59px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.buttonCon {
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.scene {
+  width: 10em;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube {
+  color: #ccc;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);
+  transform-style: preserve-3d;
+  transform-origin: 100% 50%;
+  width: 10em;
+  height: 4em;
+}
+
+.cube:hover {
+  transform: rotateX(-90deg);
+}
+
+.side {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  height: 4em;
+  width: 10em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1.5em;
   font-weight: bold;
 }
 
-@keyframes listItemFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.top {
+  background: wheat;
+  color: #222229;
+  transform: rotateX(90deg) translate3d(0, 0, 2em);
+  box-shadow: inset 0 0 0 5px #fff;
 }
 
-.fundamentals-list li:nth-child(1) {
-  --animation-order: 1;
-}
-.fundamentals-list li:nth-child(2) {
-  --animation-order: 2;
-}
-.fundamentals-list li:nth-child(3) {
-  --animation-order: 3;
-}
-.fundamentals-list li:nth-child(4) {
-  --animation-order: 4;
+.front {
+  background: #222229;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #fff;
+  transform: translate3d(0, 0, 2em);
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .title,
-  .subtitle {
-    font-size: 24px;
-  }
 
-  .intro-text,
-  .fundamentals-list li {
-    font-size: 16px;
-  }
+
+.court {
+  width: 50vw;
+  height: 500px;
+  background-image: url(volleyballCourt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e22525;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#circleOH {
+  margin-right: 100px;
+  margin-bottom: 200px;
+}
+
+#circleMD {
+  margin-right: 100px;
+}
+
+#circleOPP {
+  margin-right: 100px;
+  margin-top: 200px;
+}
+
+#circleS {
+  margin-right: 500px;
+  margin-top: 200px;
+}
+
+#circleL {
+  margin-right: 500px;
+}
+
+#circleDS {
+  margin-right: 500px;
+  margin-bottom: 200px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+#defCon {
+  width: 900px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
 }

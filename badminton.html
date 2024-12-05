@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="badmenton.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="sideButton.css" />
+  </head>
+  <body>
+    <nav class="navContainer">
+      <a href="Home.html"
+        ><button class="title" id="basketball">The Sports</button></a
+      >
+      <a href="basketball.html"
+        ><button class="basketball" onclick="activeBasketball()">
+          Basketball
+        </button></a
+      >
+      <a href="volleyball.html"
+        ><button class="volleyball">Volleyball</button></a
+      >
+      <button href="" class="badminton">Badminton</button>
+    </nav>
+
+    <div class="firstScroll">
+      <div class="firstTexts">
+        <h3 class="h3">BADMENTON</h3>
+        <p class="p">
+          Badminton is a racquet sport played either individually (singles) or
+          in teams of two (doubles). Players use a shuttlecock and racquet to
+          hit the shuttlecock over a net, aiming to land it within the
+          opponent's court. The game can be played indoors or outdoors.
+        </p>
+      </div>
+    </div>
+
+    <div class="secondScroll">
+      <div class="leftSide">
+        <h1 class="leftH1">HOW TO PLAY BADMINTON:</h1>
+        <div class="notification">
+          <div class="notiglow"></div>
+          <div class="notiborderglow"></div>
+          <div class="notititle">Setup</div>
+          <div class="notibody">Players stand on opposite sides of a net.</div>
+        </div>
+
+        <div class="notification">
+          <div class="notiglow"></div>
+          <div class="notiborderglow"></div>
+          <div class="notititle">Scoring</div>
+          <div class="notibody">
+            Points can be scored on every serve (rally scoring) and are awarded
+            when the shuttlecock lands in the opponent's court.
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notiglow"></div>
+          <div class="notiborderglow"></div>
+          <div class="notititle">Serve</div>
+          <div class="notibody">
+            The game starts with a serve, which must be hit underhand and land
+            in the correct service box.
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notiglow"></div>
+          <div class="notiborderglow"></div>
+          <div class="notititle">Gameplay</div>
+          <div class="notibody">
+            Players rally the shuttlecock back and forth, aiming to score points
+            by landing it in the opponent's court.
+          </div>
+        </div>
+      </div>
+
+      <div class="rightSide">
+        <h1 class="rightH1">FUNDAMENTALS</h1>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="flipTitle">Grip</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="flipTitle">
+                Holding the racquet correctly for different shots.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="flipTitle">Footwork</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="flipTitle">
+                Quick and agile movement around the court.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="flipTitle">Shot Techniques</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="flipTitle">
+                Mastering various shots like clears, drops, and smashes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="flipTitle">Defense</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="flipTitle">
+                Learning how to effectively return shots and anticipate the
+                opponent's moves.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thirdScroll">
+      <div class="positionHead">POSITION</div>
+      <div class="buttonCon">
+        <button class="btnbad" id="btn-fp">FRONT PLAYER</button>
+
+        <button class="btnbad" id="btn-bp">BACK PLAYER</button>
+      </div>
+
+        <div class="court" id="court">
+          <div class="circle" id="circleFP">FP</div>
+
+          <div class="circle" id="circleBP">BP</div>
+        </div>
+
+        <div id="defCon"></div>
+      
+    </div>
+
+    <div class="leftCon">
+      <a href="volleyball.html"
+        ><button class="leftButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#fff"
+          >
+            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+          </svg></button
+      ></a>
+    </div>
+
+    <script src="badminton.js"></script>
+  </body>
+</html>

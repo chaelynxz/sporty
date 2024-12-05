@@ -1,109 +1,354 @@
-.firstScroll{
-    width: 100%;
-    height: 100vh;
-    background-image: url(badmintom.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+.firstScroll {
+  width: 100%;
+  height: 100vh;
+  background-image: url(badminton.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
 
+.firstTexts {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 500px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 45px;
+  margin-right: 200px;
+  text-align: justify;
+  margin-bottom: 30px;
+  margin-left: 200px;
+}
 
-  
-  }
-  
-  
-  .firstTexts{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 500px;
-    width: 900px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 45px;
-    margin-right: 200px;
-    text-align: justify;
-    margin-bottom: 30px;
-    margin-left: 200px;
-  }
-  
-  .h3{
-    margin-bottom: 10px;
-  }
-  
-  .p{
-    margin-top: 5px;
-  }
-  .secondScroll {
-    width: 100%;
-    height: 100vh;
-    background-image: url("badminton.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 100px;
-  }
-  
-  .tita {
-    margin-top: 0px;
-    width: 100%;
-    height: 60vh;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    
-  }
-  
-  .titaCon {
-    background-color: rgba(20, 16, 16, 0.897);
-    height: 350px;
-    border-radius: 20px;
-    display: flex;
-    font-size: 35px;
-    width: 100%;
-    align-items: center         ;
-    justify-content: center;
-    padding: 5px;
-    color: white;
+.h3 {
+  margin-bottom: 10px;
+}
+
+.p {
+  margin-top: 5px;
+}
+.secondScroll {
+  width: 100%;
+  height: 100vh;
+  background-color: #133f5a;
+  display: flex;
+  justify-content: flex-start;
+  gap: 200px;
+}
+
+.leftSide {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-left: 100px;
+  gap: 20px;
+}
+
+.leftH1 {
+  color: #2eadff;
+  margin-top: 100px;
+  font-size: 2em;
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  width: 25rem;
+  height: 10rem;
+  background: #29292c;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+  --color: #32a6ff;
+}
+
+.notification:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background: #18181b;
+  z-index: 2;
+}
+
+.notification:after {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  border-radius: 0.125rem;
+  background: var(--gradient);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+
+.notification:hover:after {
+  transform: translateX(0.15rem);
+}
+
+.notititle {
+  color: var(--color);
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notititle {
+  transform: translateX(0.15rem);
+}
+
+.notibody {
+  color: #99999d;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notibody {
+  transform: translateX(0.25rem);
+}
+
+.notiglow,
+.notiborderglow {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle closest-side at center,
+    white,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.notiglow {
+  z-index: 3;
+}
+
+.notiborderglow {
+  z-index: 1;
+}
+
+.notification:hover .notiglow {
+  opacity: 0.1;
+}
+
+.notification:hover .notiborderglow {
+  opacity: 0.1;
+}
+
+.note {
+  color: var(--color);
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  }
-  
-  .titaH1 {
-    border-radius: 10px;
-    color: white;
-    font-size: 50px;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    margin-bottom: 80px;
-  }
-  
-  .grid-container {
-    width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:25px;
-  
-  }
-  .anak{
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  
-  .titaCon:hover{
-    background-color: rgba(255, 255, 0, 0.397);
-  }
+  font-size: 0.9rem;
+  width: 75%;
+}
 
+.badminton {
+  color: #fff;
+}
 
-  .badminton{
-    color: #fff;
-  }
+.rightSide {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  font-size: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rightH1 {
+  margin-left: 70px;
+  color: #2eadff;
+  font-size: 3em;
+  margin-top: 100px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 25rem;
+  height: 10rem;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.flipTitle {
+  font-size: 2em;
+  /* font-weight: 900; */
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid #3d83ff;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: #18181b;
+  color: #3d83ff;
+}
+
+.flip-card-back {
+  background: #0a273a;
+  color: #c9c9cf;
+  transform: rotateY(180deg);
+}
+
+.thirdScroll {
+  width: 100%;
+  height: 100vh;
+  background-color: #222229;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.positionHead {
+  margin-top: 200px;
+  font-size: 59px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.buttonCon {
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btnbad {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.btnbad:hover {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+.court {
+  width: 50vw;
+  height: 500px;
+  background-image: url(badmintoncourt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #07ad07;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#circleFP {
+  margin-right: 250px;
+}
+
+#circleBP {
+  margin-right: 600px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+#defCon {
+  width: 900px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}

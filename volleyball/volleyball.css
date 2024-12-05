@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(0, 195, 255, 0.644);
-  background-image: url(balleyball.jpg);
+  background-image: url(./balleyball.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,7 +43,7 @@ body {
 .secondScroll {
   width: 100%;
   height: 110vh;
-  background-image: url(second.jpg);
+  background-image: url(./second.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -240,7 +240,7 @@ body {
 .court {
   width: 50vw;
   height: 500px;
-  background-image: url(volleyballCourt.jpg);
+  background-image: url(./volleyballCourt.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -310,5 +310,9 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  color: #fff;
+}
+
+.volleyball{
   color: #fff;
 }

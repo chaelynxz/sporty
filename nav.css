@@ -9,12 +9,13 @@
   align-items: center;
   position: fixed;
   gap: 30px;
+  z-index: 10;
 }
 
-.title, .basketball, .volleyball,
-  .badminton  {
+.title, .basketball, .volleyball, .badminton  {
   font-size: 40px;
   color: yellow;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: transparent;
   border: none;
   height: 100%;
@@ -24,6 +25,10 @@
     font-size: 80px;
 display: flex;
   align-items: center;
+}
+
+a{
+  text-decoration: none;
 }
 
 .title:first-child{

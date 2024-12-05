@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("ball.jpg");
+  background-image: url("./ball.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -37,7 +37,7 @@ body {
 .nanayCon {
   width: 100%;
   height: 100vh;
-  background-image: url("fundamentalBG.webp");
+  background-image: url(./fundamentalBG.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,7 +49,6 @@ body {
 }
 
 .tita {
-  
   width: 100%;
   height: 60vh;
   flex-wrap: wrap;
@@ -69,16 +68,14 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#titaH1F{
+#titaH1F {
   margin: 0;
-  
 }
 .grid-container {
   width: 90vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  
 }
 .titaCon {
   background-color: rgba(20, 16, 16, 0.9);
@@ -120,7 +117,7 @@ body {
 .lolaCon {
   width: 100%;
   height: 100vh;
-  background-image: url(fundamentalBG.webp);
+  background-image: url(./fundamentalBG.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -178,7 +175,7 @@ body {
 .court {
   width: 50vw;
   height: 500px;
-  background-image: url(courtPic.jpg);
+  background-image: url(./courtPic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -8,30 +8,29 @@ body {
   background-size: cover;
   background-position: center;
 }
-.balleyballCon{
+.balleyballCon {
   width: 700px;
   height: 700px;
   text-align: center;
   border-radius: 20px;
   text-align: left;
-   margin-right: 0px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   display: flex;
-   flex-direction: column;
-   /* background-color: aqua; */
-   margin-left: 160px;
-   color: white;
-   align-items: center;
+  margin-right: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  margin-left: 160px;
+  color: white;
+  align-items: center;
 }
 
-.head1{
+.head1 {
   font-size: 100px;
   margin-bottom: 0%;
 }
-.heding{
+.heding {
   font-size: 40px;
 }
-
 
 .tatay {
   width: 100%;
@@ -39,45 +38,128 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  
+}
+.secondScroll {
+  width: 100%;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #ffd700 0%,
+    #ffb400 100%
+  ); /* Gradient background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: backgroundAnimation 10s infinite alternate;
 }
 
-
-.secondScroll{
-width: 100%;
-height: 100vh;
-background-image: url(valleyball\ background.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-display: flex;
-justify-content: center;
-align-items: flex-end;
-flex-direction: column;
-
+@keyframes backgroundAnimation {
+  0% {
+    background: linear-gradient(135deg, #ffd700 0%, #ffb400 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, #ffb400 0%, #ffd700 100%);
+  }
 }
 
-
-.text{
-height: 500px;
-width: 900px;
-display: flex;
-align-items: center;
-flex-direction: column;
-font-size: 45px;
-margin-right: 200px;
-text-align: justify;
-margin-bottom: 30px;
+.main-container {
+  max-width: 800px;
+  width: 90%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-out;
 }
 
-.h3{
-margin-bottom: 10px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.p{
-margin-top: 5px;
+.title,
+.subtitle {
+  text-align: center;
+  color: #ffffff; /* White color for contrast */
+  margin: 10px 0;
 }
-.volleyball{
-color: #fff;
+
+.introduction {
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #000; /* Black text for readability */
+}
+
+.fundamentals-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fundamentals-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  background-color: #ff4500; /* Volleyball orange */
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: listItemFadeIn 0.5s ease-out forwards;
+  opacity: 0;
+  animation-delay: calc(0.1s * var(--animation-order));
+}
+
+.fundamentals-list li strong {
+  font-weight: bold;
+}
+
+@keyframes listItemFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fundamentals-list li:nth-child(1) {
+  --animation-order: 1;
+}
+.fundamentals-list li:nth-child(2) {
+  --animation-order: 2;
+}
+.fundamentals-list li:nth-child(3) {
+  --animation-order: 3;
+}
+.fundamentals-list li:nth-child(4) {
+  --animation-order: 4;
+}
+
+@media (max-width: 768px) {
+  .title,
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .intro-text,
+  .fundamentals-list li {
+    font-size: 16px;
+  }
 }

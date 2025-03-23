@@ -4,32 +4,28 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(yellowblack.jpg);
-background-repeat: no-repeat;
-background-size: 110vw;
-background-position: center;
-font-family: 'Times New Roman', Times, serif;
-
+  background-repeat: no-repeat;
+  background-size: 110vw;
+  background-position: center;
+  font-family: "Times New Roman", Times, serif;
 }
-
-
 
 .meaningContainer {
   display: flex;
-align-items: center;
+  align-items: center;
   flex-direction: column;
-    height: auto;
-    width: 1500px;
-    font-size: 50px;
-    font-weight: 500;
-    color: white;
-    text-align: center;
+  height: auto;
+  width: 1500px;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
 }
 .header {
-    font-size: 100px;
-    text-align: center;
-    font-weight: 1000;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    color: yellow;
-    
+  font-size: 100px;
+  text-align: center;
+  font-weight: 1000;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: yellow;
 }
